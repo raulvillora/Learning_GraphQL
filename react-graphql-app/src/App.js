@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-// import axios from 'axios';
+import axios from 'axios';
 
-// const axiosGitHub = axios.create({
-// 	baseURL: 'https://api.github.com/graphql',
-// 	headers: {
-// 		Authorization: 'bearer YOUR_GITHUB_PERSONAL_ACCESS_TOKEN'
-// 	}
-// });
+const axiosGitHub = axios.create({
+	baseURL: 'https://api.github.com/graphql',
+	headers: {
+		Authorization: 'bearer YOUR_GITHUB_PERSONAL_ACCESS_TOKEN'
+	}
+});
 
 export default class App extends Component {
 
