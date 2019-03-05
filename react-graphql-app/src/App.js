@@ -12,8 +12,18 @@ const axiosGitHub = axios.create({
 export default class App extends Component {
   render() {
     return (
-      <div className="App">
-
+      <div>
+        <form onSubmit={this.onSubmit}>
+          <label htmlFor="url">
+            Showing open issues for https://github.com/raulvillora
+          </label>
+          <input id="url"
+            type="text"
+            onChange={this.onChange}
+            style={{ width: '330px' }}/>
+            <button type="submit">Search</button>
+        </form>
+        <hr />
       </div>
     );
   }
